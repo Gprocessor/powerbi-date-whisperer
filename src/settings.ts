@@ -55,7 +55,7 @@ class DateSelectorSettings extends FormattingSettingsCard {
     fiscalYearStartMonth = new formattingSettings.NumUpDown({
         name: "fiscalYearStartMonth",
         displayName: "Fiscal Year Start Month (1–12)",
-        value: 7   // July — common Nestlé fiscal start
+        value: 7   // Default: July
     });
 
     name: string        = "dateSelector";

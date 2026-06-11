@@ -2,7 +2,7 @@
   "visual": {
     "name": "DateWhisperer",
     "displayName": "Date Whisperer",
-    "guid": "DateWhispererGP1478NGAGB",
+    "guid": "DateWhispererVisualDF2A9572",
     "visualClassName": "Visual",
     "version": "1.0.0.0",
     "description": "Advanced date picker for Power BI \u2014 single date, date range, relative periods (MTD, QTD, YTD, Fiscal) with comprehensive quick-action sidebar.",
