@@ -5,8 +5,8 @@
     "guid": "DateWhispererVisualDF2A9572",
     "visualClassName": "Visual",
     "version": "1.0.0.0",
-    "description": "Advanced date picker for Power BI \u2014 single date, date range, relative periods (MTD, QTD, YTD, Fiscal) with comprehensive quick-action sidebar.",
-    "supportUrl": "https://github.com/Gprocessor/date-whisperer-pbiviz",
+    "description": "Free date range picker for Power BI. Dual calendar, 40+ presets (Days, Weeks, Months, Quarters, Years, Fiscal, Business, Fixed), 7 themes, modal dialog UI.",
+    "supportUrl": "https://github.com/Gprocessor/powerbi-date-whisperer/issues",
     "gitHubUrl": "https://github.com/Gprocessor/date-whisperer-pbiviz"
   },
   "apiVersion": "5.11.0",
