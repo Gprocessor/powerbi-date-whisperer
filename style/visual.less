@@ -1,0 +1,40 @@
+// Date Whisperer — Pill only (dialog opens via openModalDialog API)
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.dw-landing {
+    width:100%; height:100%; display:flex; flex-direction:column;
+    align-items:center; justify-content:center; gap:6px;
+    font-family:"Segoe UI",sans-serif; text-align:center; padding:12px;
+    border:2px dashed #334155; border-radius:10px; background:#0f172a;
+}
+.dw-landing-ico  { font-size:22px; }
+.dw-landing-sub  { font-size:11px; color:#64748b; line-height:1.5; }
+.dw-landing-sub strong { color:#a78bfa; }
+
+.dw-pill {
+    display:inline-flex; align-items:center; gap:7px;
+    padding:7px 14px; border-radius:22px; cursor:pointer;
+    border:1.5px solid var(--border,#e1e8f0);
+    background:var(--pill-bg,#f0f7ff);
+    color:var(--pill-text,#0078D4);
+    font-size:13px; font-weight:500;
+    font-family:"Segoe UI",Tahoma,sans-serif;
+    white-space:nowrap; max-width:100%;
+    transition:all .18s; user-select:none;
+    box-shadow:0 1px 4px rgba(0,0,0,.07);
+    &:hover { filter:brightness(.96); box-shadow:0 2px 10px rgba(0,0,0,.12); }
+    &.dw-pill--active {
+        background:var(--accent,#0078D4);
+        color:var(--accent-t,#fff);
+        border-color:var(--accent,#0078D4);
+    }
+}
+.dw-pill-ico   { font-size:14px; }
+.dw-pill-lbl   { flex:1; overflow:hidden; text-overflow:ellipsis; max-width:240px; }
+.dw-pill-caret { font-size:11px; opacity:.6; }
+.dw-pill-x {
+    width:18px; height:18px; border-radius:50%; flex-shrink:0;
+    background:rgba(255,255,255,.28); display:flex; align-items:center;
+    justify-content:center; font-size:10px; font-weight:700; cursor:pointer;
+    &:hover { background:rgba(255,255,255,.5); }
+}

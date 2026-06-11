@@ -1,0 +1,40 @@
+{
+  "name": "date-whisperer-pbiviz",
+  "displayName": "Date Whisperer",
+  "version": "1.0.0",
+  "description": "Advanced date picker for Power BI with comprehensive date measure coverage",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gprocessor/date-whisperer-pbiviz.git"
+  },
+  "keywords": [
+    "powerbi-visual",
+    "date-picker",
+    "calendar",
+    "filter",
+    "slicer"
+  ],
+  "author": {
+    "name": "Gprocessor"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "pbiviz package",
+    "start": "pbiviz start",
+    "package": "pbiviz package",
+    "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
+    "audit": "npm audit --omit=dev"
+  },
+  "devDependencies": {
+    "less": "^4.1.3",
+    "powerbi-visuals-api": "~5.11.0",
+    "powerbi-visuals-tools": "^7.1.0",
+    "powerbi-visuals-utils-formattingmodel": "^6.2.2",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-powerbi-visuals": "*"
+  },
+  "dependencies": {
+    "powerbi-models": "^2.0.1"
+  }
+}

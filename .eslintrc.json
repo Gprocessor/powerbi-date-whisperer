@@ -1,0 +1,23 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": true,
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "powerbi-visuals"
+  ],
+  "rules": {
+    "powerbi-visuals/no-http-string": "error",
+    "powerbi-visuals/no-inner-outer-html": "error",
+    "powerbi-visuals/no-cookies": "error",
+    "powerbi-visuals/no-eval": "error",
+    "powerbi-visuals/no-unsupported-fetch": "error"
+  }
+}

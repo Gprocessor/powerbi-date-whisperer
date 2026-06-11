@@ -1,0 +1,198 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Date Field",
+      "name": "dateField",
+      "kind": "Grouping"
+    }
+  ],
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "dateField": {
+            "max": 1
+          }
+        }
+      ],
+      "categorical": {
+        "categories": {
+          "for": {
+            "in": "dateField"
+          },
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 30000
+            }
+          }
+        }
+      }
+    }
+  ],
+  "objects": {
+    "general": {
+      "displayName": "General",
+      "displayNameKey": "formattingGeneral",
+      "properties": {
+        "filter": {
+          "type": {
+            "filter": true
+          }
+        },
+        "filterState": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "dateSelector": {
+      "displayName": "Date Selection",
+      "properties": {
+        "selectionMode": {
+          "displayName": "Selection Mode",
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Single Date",
+                "value": "single"
+              },
+              {
+                "displayName": "Date Range",
+                "value": "range"
+              }
+            ]
+          }
+        },
+        "dateFormat": {
+          "displayName": "Date Format",
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "DD/MM/YYYY",
+                "value": "DD/MM/YYYY"
+              },
+              {
+                "displayName": "MM/DD/YYYY",
+                "value": "MM/DD/YYYY"
+              },
+              {
+                "displayName": "YYYY-MM-DD",
+                "value": "YYYY-MM-DD"
+              }
+            ]
+          }
+        },
+        "weekStart": {
+          "displayName": "Week Starts On",
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Sunday",
+                "value": "sunday"
+              },
+              {
+                "displayName": "Monday",
+                "value": "monday"
+              }
+            ]
+          }
+        },
+        "fiscalYearStartMonth": {
+          "displayName": "Fiscal Year Start Month (1-12)",
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    },
+    "appearance": {
+      "displayName": "Appearance",
+      "properties": {
+        "showTitle": {
+          "displayName": "Show Title",
+          "type": {
+            "bool": true
+          }
+        },
+        "titleText": {
+          "displayName": "Title Text",
+          "type": {
+            "text": true
+          }
+        },
+        "primaryColor": {
+          "displayName": "Primary Color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "backgroundColor": {
+          "displayName": "Background Color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontFamily": {
+          "displayName": "Font Family",
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Segoe UI",
+                "value": "Segoe UI"
+              },
+              {
+                "displayName": "Arial",
+                "value": "Arial"
+              },
+              {
+                "displayName": "Tahoma",
+                "value": "Tahoma"
+              }
+            ]
+          }
+        },
+        "fontSize": {
+          "displayName": "Font Size",
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    },
+    "calendar": {
+      "displayName": "Calendar Settings",
+      "properties": {
+        "showQuickActions": {
+          "displayName": "Show Quick Actions Panel",
+          "type": {
+            "bool": true
+          }
+        },
+        "showManualInput": {
+          "displayName": "Show Manual Date Input",
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    }
+  },
+  "supportsSynchronizingFilterState": true,
+  "supportsHighlight": false,
+  "supportsKeyboardFocus": true,
+  "supportsLandingPage": true,
+  "supportsEmptyDataView": true,
+  "sorting": {
+    "default": {}
+  },
+  "privileges": []
+}

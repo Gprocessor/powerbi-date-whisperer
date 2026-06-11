@@ -1,0 +1,25 @@
+{
+  "visual": {
+    "name": "DateWhisperer",
+    "displayName": "Date Whisperer",
+    "guid": "DateWhispererGP1478NGAGB",
+    "visualClassName": "Visual",
+    "version": "1.0.0.0",
+    "description": "Advanced date picker for Power BI \u2014 single date, date range, relative periods (MTD, QTD, YTD, Fiscal) with comprehensive quick-action sidebar.",
+    "supportUrl": "https://github.com/Gprocessor/date-whisperer-pbiviz",
+    "gitHubUrl": "https://github.com/Gprocessor/date-whisperer-pbiviz"
+  },
+  "apiVersion": "5.11.0",
+  "author": {
+    "name": "Gprocessor",
+    "email": "gprocessor@outlook.com"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": [],
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": null,
+  "stringResources": []
+}
